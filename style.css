@@ -9,9 +9,6 @@
 .main-body {
   margin: 0 auto;
 }
-/* .img-width {
-  width: 100%;
-} */
 /* this section for header */
 .nav-content {
   display: flex;
@@ -74,7 +71,7 @@
   gap: 8px;
 }
 .bannar-img {
-  background-image: url("/images/Circle\ design.svg");
+  background-image: url("./images/Circle\ design.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -90,7 +87,7 @@
 @media screen and (max-width: 567px) {
   .nav-content {
     flex-direction: column;
-    /* padding: 35px 99px 22px 99px; */
+    padding: 0;
   }
   .nav-item {
     flex-direction: column;
@@ -103,7 +100,7 @@
   }
   .brand-logo {
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 31px;
     margin-top: 51px;
   }
   .bannar-img {
