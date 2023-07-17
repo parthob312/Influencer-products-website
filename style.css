@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.main-body {
+  margin: 0 auto;
+}
+/* .img-width {
+  width: 100%;
+} */
+/* this section for header */
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 87px 120px 0 120px;
+}
+.nav-list {
+  list-style-type: none;
+}
+.nav-item {
+  display: flex;
+  gap: 34px;
+  align-items: center;
+}
+.nav-title {
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.nav-link {
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav-bannar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 51px 132px 0 120px;
+}
+.bannar-title {
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 4.375rem;
+}
+.bannar-text {
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 16px 0;
+}
+.bannar-btn {
+  border-radius: 41px;
+  background: #e02c6d;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 24px;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.bannar-img {
+  background-image: url("/images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* this section for main body */
+.brand-logo {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 136px;
+}
+
+/* Responsive */
+@media screen and (max-width: 567px) {
+  .nav-content {
+    flex-direction: column;
+    /* padding: 35px 99px 22px 99px; */
+  }
+  .nav-item {
+    flex-direction: column;
+    margin-top: 22px;
+    gap: 10px;
+  }
+  .nav-bannar {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .brand-logo {
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 51px;
+  }
+  .bannar-img {
+    margin-top: 73px;
+  }
+  .bannar-content {
+    text-align: center;
+  }
+  .bannar-title {
+    font-size: 1.75rem;
+    margin-top: 30px;
+  }
+  .bannar-text {
+    font-size: 0.875rem;
+    margin-top: 15px;
+  }
+  .bannar-btn {
+    margin-top: 20px;
+  }
+}
