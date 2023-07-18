@@ -10,10 +10,6 @@
   margin: 0 auto;
   max-width: 1440px;
 }
-.responsive {
-  width: 100%;
-  height: auto;
-}
 /* this section for header */
 .nav-content {
   display: flex;
@@ -47,6 +43,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 133px;
   padding: 51px 132px 0 120px;
 }
 .bannar-title {
@@ -61,10 +58,11 @@
   font-family: Poppins;
   font-size: 1rem;
   font-weight: 600;
-  margin: 16px 0;
+  padding: 16px 0 16px 0;
 }
 .bannar-btn {
   border-radius: 41px;
+  border: 0;
   background: #e02c6d;
   color: #fff;
   font-family: Poppins;
@@ -154,6 +152,40 @@
   font-size: 1rem;
   font-weight: 700;
 }
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 165px;
+  gap: 96px;
+}
+.feature-title {
+  color: #0a0826;
+  font-family: Poppins;
+  font-size: 2.375rem;
+  font-weight: 700;
+  line-height: 3.75rem;
+}
+.feature-description {
+  color: #6c6c6c;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  padding: 16px 95px 16px 0;
+}
+.feature-btn {
+  border: 0;
+  background: #e02c6d;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 24px;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 8px;
+}
 
 /* Responsive */
 @media screen and (max-width: 567px) {
@@ -161,26 +193,28 @@
     margin: 0 auto;
     max-width: 360px;
   }
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
   .nav-content {
     flex-direction: column;
     padding: 35px 16px 0 16px;
   }
   .nav-item {
     flex-direction: column;
-    margin-top: 22px;
+    margin: 22px 0 73px 0;
     gap: 10px;
   }
   .nav-bannar {
     flex-direction: column-reverse;
     padding: 0;
+    gap: 30px;
   }
   .brand-logo {
     flex-wrap: wrap;
     gap: 31px;
     margin-top: 51px;
-  }
-  .bannar-img {
-    margin: 73px 85px 30px 73px;
   }
   .bannar-content {
     text-align: center;
@@ -191,7 +225,6 @@
   .bannar-text {
     font-size: 0.875rem;
     padding: 15px 21px 20px 18px;
-    margin: 0;
   }
   .bannar-btn {
     margin-top: 0;
@@ -206,5 +239,25 @@
   }
   .more {
     margin-top: 32px;
+  }
+  .feature {
+    flex-direction: column-reverse;
+    padding: 50px 16px 50px 15px;
+    gap: 30px;
+    text-align: center;
+  }
+  .feature-title {
+    color: #0a0826;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .feature-description {
+    color: #6c6c6c;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    padding: 15px 0 50px 0;
   }
 }
