@@ -72,6 +72,7 @@
   display: inline-flex;
   align-items: flex-start;
   gap: 8px;
+  cursor: pointer;
 }
 .bannar-img {
   background-image: url("./images/Circle\ design.svg");
@@ -151,6 +152,8 @@
   font-family: Poppins;
   font-size: 1rem;
   font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
 }
 .feature {
   display: flex;
@@ -185,8 +188,39 @@
   display: inline-flex;
   align-items: flex-start;
   gap: 8px;
+  cursor: pointer;
 }
 
+/* this section for footer */
+
+.main-footer {
+  background: #0a0826;
+  padding: 50px 589px;
+}
+.footer-body {
+  text-align: center;
+}
+.footer-title {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.footer-description {
+  color: #d9dbe1;
+  font-family: Manrope;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin-top: 3px;
+}
+.footer-img {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 17px;
+}
 /* Responsive */
 @media screen and (max-width: 567px) {
   .main-body {
@@ -259,5 +293,21 @@
     font-weight: 700;
     line-height: 28px;
     padding: 15px 0 50px 0;
+  }
+  .main-footer {
+    padding: 50px 0;
+  }
+  .footer-img {
+    margin-top: 10px;
+  }
+  .footer-description {
+    margin-top: 0;
+  }
+  .footer-description1 {
+    margin-top: 5px;
+  }
+  .footer-img {
+    gap: 7px;
+    margin-top: 10px;
   }
 }
